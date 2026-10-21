@@ -1,0 +1,32 @@
+{
+  "entorno": {
+    "python": "3.14.5",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "plataforma": "Windows-11-10.0.26100-SP0",
+    "cpu": 4,
+    "modo_ligero": false,
+    "semilla": 42,
+    "n_arboles": 300
+  },
+  "datos": "Breast Cancer Wisconsin (Diagnostic), scikit-learn; 1 = maligno",
+  "particion": "75/25 estratificada, semilla 42",
+  "cv": "StratifiedKFold(5, shuffle=True, 42) en entrenamiento",
+  "cv_comparacion": "RepeatedStratifiedKFold(5, 2) externa + GridSearchCV interno de 3 pliegues",
+  "metrica_seleccion": "f1",
+  "busqueda": "RandomizedSearchCV n_iter=20, tiempo 78.0 s",
+  "mejores_parametros": {
+    "criterion": "entropy",
+    "max_depth": "5",
+    "max_features": "log2",
+    "max_samples": "0.5",
+    "min_samples_leaf": "2"
+  },
+  "permutacion": "conjunto de prueba (143 casos), n_repeats=20",
+  "umbral_agrupamiento": 0.7,
+  "complejidad_modelo_final": {
+    "profundidad_media": 4.846666666666667,
+    "hojas_media": 10.076666666666666,
+    "nodos_totales": 5746
+  }
+}
